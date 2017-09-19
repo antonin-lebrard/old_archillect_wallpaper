@@ -13,7 +13,9 @@ namespace ArchillectTrayProgram
     class Fetch
     {
         public const string UriArchillect = "http://archillect.com/";
-        public const string ImgTempPath = "E:\\Dev\\ArchillectServiceProgram\\tmp.jpg";
+        public static string ImgTempPath = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), 
+            "ArchillectWallpaper\\tmp.jpg");
 
         public const string ContainerElement = "<div id=\"container\">";
         public const string ImgElement = "<img id=\"ii\" src=";
